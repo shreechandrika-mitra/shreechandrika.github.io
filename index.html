@@ -5,61 +5,171 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shreechandrika Mitra</title>
   <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #222;
+      --accent-color: #0066cc;
+      --light-gray: #f2f2f2;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #fdfdfd;
-      color: #333;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      animation: fadeIn 1s ease;
     }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
     header {
-      background-color: #fff;
-      padding: 2rem;
       text-align: center;
+      padding: 2.5rem 1rem;
+      background-color: var(--light-gray);
       border-bottom: 1px solid #ddd;
     }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      animation: fadeIn 1.5s ease;
+    }
+
     h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.4rem;
     }
+
     h2 {
       margin: 0;
       font-weight: normal;
       font-size: 1.2rem;
       color: #777;
     }
-    section {
-      padding: 2rem;
-      max-width: 700px;
+
+    main {
+      max-width: 850px;
       margin: auto;
+      padding: 2rem 1.5rem;
     }
-    .bio {
-      font-size: 1.1rem;
+
+    section {
+      margin-bottom: 2.8rem;
+      animation: fadeIn 1.2s ease;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: #333;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.3rem;
+    }
+
+    p, li {
+      font-size: 1.05rem;
       line-height: 1.6;
     }
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin: 1rem auto;
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin-bottom: 0.6rem;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #004c99;
+    }
+
+    .contact a {
       display: block;
-        }
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+      padding: 1rem;
+      background: #f9f9f9;
+    }
   </style>
 </head>
 <body>
+
   <header>
+    <img src="your-photo.jpg" alt="Shreechandrika Mitra" />
     <h1>Shreechandrika Mitra</h1>
     <h2>Content Writer / Filmmaker</h2>
   </header>
 
-  <section>
-    <!-- Optional photo -->
-    <!-- <img src="your-photo.jpg" alt="Shreechandrika Mitra" class="profile-pic"> -->
+  <main>
+    <section>
+      <h3>About Me</h3>
+      <p>
+        I'm a literature student with a passion for storytelling — through words and through film.
+        I write, I create, and I dream of telling stories that move people. From writing scripts and short stories
+        to co-founding a small film studio, I'm exploring the space where literature meets cinema.
+      </p>
+    </section>
 
-    <p class="bio">
-      I'm a literature student with a passion for storytelling — through words and through film. I write, I create, and I dream of telling stories that move people. From writing scripts and short stories to co-founding a small film studio, I'm exploring the space where literature meets cinema.
-    </p>
-  </section>
+    <section>
+      <h3>Projects & Work</h3>
+      <ul>
+        <li>
+          <strong>Short Film – <em>Stuck</em></strong><br />
+          <a href="https://youtu.be/dIGO5Ov3dmU?feature=shared" target="_blank">Watch on YouTube</a> — Screenplay & Lead Role
+        </li>
+        <li>
+          <strong>Medium Articles:</strong><br />
+          <a href="https://medium.com/@shreechandrikamitra/the-first-time-i-knew-love-e0c6ffcd970c" target="_blank">The first time I knew love</a><br />
+          <a href="https://medium.com/@shreechandrikamitra/if-not-by-people-by-the-pages-858b1f67e638" target="_blank">If not by people, by the pages then</a><br />
+          <a href="https://medium.com/@shreechandrikamitra/art-ethics-the-ghibli-trend-cf4621078ebe" target="_blank">Art & Ethics: The Ghibli Trend</a>
+        </li>
+        <li>
+          <strong>News Tap One:</strong><br />
+          Editor & Blogger<br />
+          English Blogs: <a href="https://newstapone.com/author/shreechandrika/" target="_blank">View Profile</a><br />
+          Bangla Blogs: <a href="https://www.blogger.com/profile/02759716121664521108" target="_blank">View Profile</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact">
+      <h3>Contact Me</h3>
+      <a href="mailto:work.shreechandrika@gmail.com">Email: work.shreechandrika@gmail.com</a>
+      <a href="https://in.linkedin.com/in/shreechandrikamitra" target="_blank">LinkedIn</a>
+      <a href="https://www.instagram.com/shreec_m?igsh=djN1ZnJlYmM5a3Nj" target="_blank">Instagram</a>
+      <a href="https://x.com/shreec_m?t=LS0_zEEXD2LpM9FhWxOBxQ&s=09" target="_blank">Twitter</a>
+      <a href="https://youtube.com/@takethreestudios-c5q?feature=shared" target="_blank">YouTube – Take Three Studios</a>
+      <a href="https://medium.com/@shreechandrikamitra" target="_blank">Medium Profile</a>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Shreechandrika Mitra. All rights reserved.
+  </footer>
+
 </body>
   </html
